@@ -10,6 +10,11 @@ Responsive UI: View and manage inventory seamlessly across devices, built with P
 
 Interactive Inventory Management: Scroll through a grid of items and manage your inventory with a headless CMS backend (coming soon).
 
+## Requirements:
+In order to use Firebase Authentication (Email & Password), you must create a .env file. You can rename the .env.example to .env and adjust the values to match your Firebase Authencation setup.
+
+Firebase includes Authentication, Storage and Messaging.
+
 ## CLI Commands
 
 ```bash
