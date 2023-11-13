@@ -1,4 +1,14 @@
-# partpile-ui
+# PartPile-UI
+
+PartPile-UI is an MVP for a sleek inventory management system tailored for computer workshops. It focuses on a user-friendly, Instagram-style interface for easy viewing and managing of computer parts inventory.
+
+## Features
+
+User Authentication: Secure login with email/password, Google, and Microsoft accounts via Firebase.
+
+Responsive UI: View and manage inventory seamlessly across devices, built with Preact and TailwindCSS.
+
+Interactive Inventory Management: Scroll through a grid of items and manage your inventory with a headless CMS backend (coming soon).
 
 ## CLI Commands
 
