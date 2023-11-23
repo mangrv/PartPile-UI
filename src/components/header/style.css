@@ -2,14 +2,11 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-
 	display: flex;
 	justify-content: space-between;
-
 	width: 100%;
 	height: 3.5rem;
-
-	background: #673ab8;
+	background: #607D8B; /* Base color: Blue-Grey */
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	z-index: 50;
 }
@@ -17,14 +14,14 @@
 .header a {
 	display: inline-block;
 	padding: 0 1rem;
-	color: #fff;
+	color: #fff; /* Keep text color white for contrast */
 	text-decoration: none;
 	line-height: 3.5rem;
 }
 
 .header a:hover,
 .header a:active {
-	background: rgba(0, 0, 0, 0.2);
+	background: #455A64; /* Darker shade: Dark Blue Grey */
 }
 
 .header a.logo {
@@ -47,5 +44,10 @@
 }
 
 .header nav a.active {
-	background: rgba(0, 0, 0, 0.4);
+	background: #CFD8DC; /* Lighter shade: Light Blue Grey */
+}
+
+/* Add a filter to the SVG image to change its color to white */
+.logo img {
+	filter: invert(100%);
 }

@@ -1,41 +1,25 @@
+// src/routes/home/index.js
+
 import { h } from 'preact';
+import { route } from 'preact-router';
 import style from './style.css';
 
 const Home = () => {
-	return (
-		<div class={style.home}>
-			<a href="https://preactjs.com">
-				<img src="../../assets/preact-logo.svg" alt="Preact Logo" height="160" width="160" />
-			</a>
-			<h1>Get Started Building PWAs with Preact-CLI</h1>
-			<section>
-				<Resource
-					title="Learn Preact"
-					description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-					link="https://preactjs.com/tutorial/"
-				/>
-				<Resource
-					title="Differences to React"
-					description="If you're coming from React, check out our docs for where Preact differs"
-					link="https://preactjs.com/guide/v10/differences-to-react"
-				/>
-				<Resource
-					title="Learn Preact-CLI"
-					description="To learn more about Preact-CLI, read through the ReadMe & Wiki"
-					link="https://github.com/preactjs/preact-cli#preact-cli--"
-				/>
-			</section>
-		</div>
-	);
-};
+  return (
+    <div class={style.home}>
+      <h1>Welcome to PartPile Inventory Solution (PPIS)</h1>
+      <p>PartPile is a sleek inventory management system tailored for computer workshops. It focuses on a user-friendly, Instagram-style interface for easy viewing and managing of computer parts inventory.</p>
 
-const Resource = props => {
-	return (
-		<a href={props.link} class={style.resource}>
-			<h2>{props.title}</h2>
-			<p>{props.description}</p>
-		</a>
-	);
+<h2>Product Features</h2>
+<ul>
+	<li>User Authentication: Secure login with email/password via Firebase.</li>
+	<li>Responsive UI: View and manage inventory seamlessly across devices, built with Preact and TailwindCSS.</li>
+	<li>Interactive Inventory Management: Scroll through a grid of items and manage your inventory with a headless CMS backend (coming soon).</li>
+</ul>
+  
+  
+    </div>
+  );
 };
 
 export default Home;

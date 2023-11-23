@@ -1,5 +1,8 @@
 .home {
 	text-align: center;
+	padding-top: 3.5rem; /* This should match the height of your header */
+	max-width: 800px; /* Maximum width of the content area */
+  	margin: 0 auto; /* Center the content area */
 }
 
 .home img {
@@ -16,7 +19,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 1.5rem;
 }
-
+ 
 @media (max-width: 639px) {
 	.home section {
 		margin-top: 5rem;
@@ -50,3 +53,71 @@
 		box-shadow: 0 25px 50px -12px #673ab888;
 	}
 }
+
+/* Custom List Style:*/
+/* Use custom images or icons for list bullets, or style the list bullets with CSS. */
+.home ul {
+	list-style: none; /* Remove default list style */
+	padding-left: 0; /* Remove default padding */
+  }
+  
+  .home li::before {
+	content: '•'; /* Custom bullet */
+	color: #673ab8; /* Bullet color */
+	font-size: 1.5rem; /* Bullet size */
+	margin-right: 0.5rem; /* Space between bullet and text */
+	vertical-align: middle; /* Align bullet vertically */
+  }
+  
+/* Spacing and Alignment:*/
+/* Adjust the spacing around the bullet points to ensure they're easy to read. */
+  .home li {
+	margin-bottom: 0.5rem; /* Space between list items */
+  }
+
+  
+/* Typography: */
+/* Adjust the font size, line height, and font weight for better readability. */
+.home h1 {
+	font-size: 2.5rem; /* Larger font size for the main heading */
+	color: #333; /* Darker color for better contrast */
+	margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .home p, .home li {
+	font-size: 1rem; /* Suitable font size for paragraphs and list items */
+	line-height: 1.6; /* Optimal line height for readability */
+  }
+
+  
+/* Responsive Design: */
+/* Make sure your design is responsive and looks good on all devices.*/
+@media (max-width: 768px) {
+	.home {
+	  padding: 1rem; /* Adjust padding for smaller screens */
+	}
+  
+	.home h1 {
+	  font-size: 2rem; /* Adjust font size for headings on smaller screens */
+	}
+  }
+  
+
+
+/* Call to Action */
+/* Highlight any call-to-action buttons, like the "Login" button, to make them stand out. */
+.home button {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #673ab8;
+	border: none;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .home button:hover {
+	background-color: #5a2dab;
+  }
+  

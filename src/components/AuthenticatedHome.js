@@ -1,15 +1,15 @@
 // src/components/AuthenticatedHome.js
 
 import { h } from 'preact';
-import { useAuth } from '../context/AuthContext'; // Import the useAuth hook
+import { useAuth } from '../context/AuthContext';
 
 const AuthenticatedHome = () => {
-  const { currentUser, signOut } = useAuth(); // Access the current user and signOut function
+  const { currentUser, signOut } = useAuth();
 
   // Handler for the logout button
   const handleLogout = async () => {
     try {
-      await signOut(); // Call the signOut function from the context
+      await signOut();
     } catch (error) {
       console.error('Failed to log out:', error);
     }
@@ -17,9 +17,8 @@ const AuthenticatedHome = () => {
 
   return (
     <div>
-      <h1>Welcome, {currentUser.email}</h1> {/* Display the user's email or name */}
-      <button onClick={handleLogout}>Logout</button> {/* Logout button */}
-      {/* Insert additional content for your authenticated homepage here */}
+      <h1>Welcome, {currentUser.email}</h1> {/* Display the user's email */}
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 };
